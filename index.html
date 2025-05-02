@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toast/Snack Bar</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Toast/SnackBar</h1>
+    <div class="from-group">
+      <label>Horizontal Position</label>
+      <select id="hPos">
+        <option value="right">Right</option>
+        <option value="left">Left</option>
+        <option value="center">Center</option>
+      </select>
+    </div>
+    <div class="from-group">
+      <label>Vertical Postion</label>
+      <select id="vPos">
+      
+      <option value="top">Top</option>
+      <option value="bottom">Bottom</option>
+    </select>
+    </div>
+    <div class="from-group">
+      <label>Toast Type</label>
+      <select id="type">
+      <option value="sucess">Sucess</option>
+      <option value="error">Error</option>
+      <option value="normal">Normal</option>
+    </select>
+    </div>
+    <div class="from-group">
+      <label>Mesasge</label>
+      <input type="text" placeholder="Write here pls" id="message"/>
+    </div>
+    <div class="from-group">
+      <label>Duration(<span id="durationlebel">5s</span>)</label>
+      <input type="range"  id="duration" min="1" max="10" value="5"/>
+    </div>
+    <button onclick="showToast()">Show Toast</button>
+  </div>
+  <div id="toast-container"></div>
+  <script src="index.js"></script>
+</body>
+</html>
